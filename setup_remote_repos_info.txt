@@ -17,6 +17,19 @@ If you have multiple remote repositories, you can use this command to see the na
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Verify the remote repository URL, you can use the following command:
+    git remote get-url origin
+This command will display the URL associated with the "origin" remote repository.
+
+
+
+If the URL is incorrect and you need to update it, you can use the following command to change the URL of the remote repository:
+    git remote set-url origin <new_repository_url>
+Replace <new_repository_url> with the correct URL of your GitHub repository. 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 How to set a different name for your remote repository
 
 To set a different name for your remote repository, you can use the git remote add command with the desired name. Here's how you can do it:
