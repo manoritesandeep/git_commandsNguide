@@ -30,7 +30,7 @@ That's it! You have successfully created a new repository from the command line 
 gh repo create
 To get started with GitHub CLI, please run:  gh auth login
 Alternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token.
-PS C:\Users\manor\abc\abc\git_cmdsNguide> gh auth login
+PS C:\Users\abc\abc\abc\git_cmdsNguide> gh auth login
 ? What account do you want to log into? GitHub.com
 ? What is your preferred protocol for Git operations? HTTPS
 ? Authenticate Git with your GitHub credentials? Yes
@@ -43,5 +43,72 @@ Press Enter to open github.com in your browser...
 - gh config set -h github.com git_protocol https
 ✓ Configured git protocol
 ✓ Logged in as yourusername
-PS C:\Users\manor\OneDrive - kettering.edu\Online Learning Portal Docs\git_cmdsNguide>
-PS C:\Users\manor\OneDrive - kettering.edu\Online Learning Portal Docs\git_cmdsNguide>
+PS C:\Users\\abc\abc\abc\git_cmdsNguide>
+PS C:\Users\abc\abc\abc\git_cmdsNguide>
+
+# create again
+
+PS C:\Users\\abc\abc\abc\\git_cmdsNguide> gh repo create
+? What would you like to do? Create a new repository on GitHub from scratch
+? Repository name git_commandsNguide
+
+? Repository name git_commandsNguide
+? Description Random commands and guides for using git everyday. My notes on errors and possible solutions to millions of problems we developer face. 
+
+? Description Random commands and guides for using git everyday. My notes on errors and possible solutions to millions of problems we developer face.
+? Visibility Public
+? Would you like to add a README file? Yes
+? Would you like to add a .gitignore? Yes
+? Choose a .gitignore template Python
+? Would you like to add a license? No
+? This will create "git_commandsNguide" as a public repository on GitHub. Continue? Yes
+✓ Created repository manoritesandeep/git_commandsNguide on GitHub
+? Clone the new repository locally? Yes
+Cloning into 'git_commandsNguide'...
+PS C:\Users\\abc\abc\abc\git_cmdsNguide> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_commandsNguide/
+        repo_via_cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\abc\abc\abc\git_cmdsNguide> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        repo_via_cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\abc\abc\abc\git_cmdsNguide> git add .
+PS C:\Users\\abc\abc\abc\\git_cmdsNguide> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   repo_via_cmd.txt
+
+PS C:\Users\\abc\abc\abc\\git_cmdsNguide> git commit -m "initial commit"
+[master (root-commit) 96431e9] initial commit
+ 2 files changed, 49 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 repo_via_cmd.txt
+PS C:\Users\\abc\abc\abc\git_cmdsNguide> git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\abc\abc\abc\\git_cmdsNguide> git status
+On branch master
+nothing to commit, working tree clean
