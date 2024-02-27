@@ -1,0 +1,20 @@
+Please note that changing the default branch name on GitHub does not automatically update the branch names in your local Git repository. 
+If you want to update the branch name in your local repository, you can follow these steps:
+
+    Open your terminal or command prompt.
+
+    Navigate to the local repository directory using the cd command.
+
+    Run the following command to rename the current branch to "main":
+
+    git branch -m master main
+
+    Update the upstream branch reference to "main" using the following command:
+
+    git push -u origin main
+
+    This command will push the renamed branch to the remote repository and set it as the upstream branch.
+
+After completing these steps, your local repository will use "main" as the default branch name, and the remote repository on GitHub will also have "main" as the default branch.
+
+Thank you :)
