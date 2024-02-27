@@ -1,0 +1,44 @@
+How to get  the name of your remote repository if you have set a different name?
+
+To get the name of your remote repository if you have set a different name, you can use the following command:
+
+git remote -v
+
+Running this command will display a list of your remote repositories along with their URLs. The name of the remote repository will be listed on the left side of the URL. By default, the name is usually set to "origin" when you clone a repository.
+
+Here's an example output:
+
+origin  https://github.com/your-username/your-repository.git (fetch)
+origin  https://github.com/your-username/your-repository.git (push)
+
+In this example, the name of the remote repository is "origin". If you have set a different name for your remote repository, it will be displayed instead of "origin" in the output.
+
+If you have multiple remote repositories, you can use this command to see the names and URLs of all your remotes.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+How to set a different name for your remote repository
+
+To set a different name for your remote repository, you can use the git remote add command with the desired name. Here's how you can do it:
+
+    Open your terminal or command prompt.
+
+    Navigate to your local Git repository using the cd command.
+
+    Run the following command to add a remote repository with a specific name:
+
+    git remote add <remote-name> <remote-url>
+
+    Replace <remote-name> with the desired name for your remote repository, and <remote-url> with the URL of your remote repository.
+
+    For example, if you want to set the remote repository name as "upstream" and the URL is "https://github.com/upstream/repo.git(opens in a new tab)", the command would be:
+
+    git remote add upstream https://github.com/upstream/repo.git
+
+    Verify that the remote repository has been added successfully by running the following command:
+
+    git remote -v
+
+    This command will display a list of your remote repositories along with their URLs, and you should see the newly added remote repository with the specified name.
+
+Now you can use the <remote-name> you specified when running Git commands that interact with the remote repository, such as git push, git pull, or git fetch.
